@@ -1,0 +1,63 @@
+/* Basic Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Dark gray text */
+}
+
+/* Header Styling */
+header {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #007bff; /* Example blue color for headings */
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Example blue color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styling (if needed) */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
