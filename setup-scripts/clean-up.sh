@@ -1,5 +1,5 @@
 #!/bin/bash
-# ./clean-up.sh your-project-id https://github.com/your-username/your-repo.git unique-id
+# ./clean-up.sh your-project-id repo-name unique-id
 
 # Check if project ID, unique ID, and repo name are provided
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then
@@ -9,8 +9,8 @@ if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then
 fi
 
 PROJECT_ID="$1"
-UNIQUE_ID="$2"
-REPO_NAME="$3"
+REPO_NAME="$2"
+UNIQUE_ID="$3"
 BASE_BUCKET="hazmat-data-files-${UNIQUE_ID}"
 
 # 1. Install the Google Cloud SDK (if not already installed)
@@ -21,7 +21,7 @@ then
 fi
 
 # 2. Authenticate with Google Cloud
-gcloud auth login
+#gcloud auth login
 
 # 3. Set Your Project
 gcloud config set project "$PROJECT_ID"
