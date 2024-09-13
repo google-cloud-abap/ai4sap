@@ -4,7 +4,7 @@
 # Check if project ID, unique ID, and repo name are provided
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then
     echo "Error: Please provide GCP project ID, unique ID, and repository name as arguments."
-    echo "Usage: ./cleanup.sh <project-id> <unique-id> <repo-name>"
+    echo "Usage: ./cleanup.sh <project-id> <repo-name> <unique-id>"
     exit 1
 fi
 
