@@ -44,7 +44,7 @@ else
 fi
 
 # 7. Upload Files to Folders within the Base Bucket
-for folder in hazmat-pictogram hazmat-pictogram-embeddings hazmat-pictogram-descriptions hazmat-prod hazmat-prod-embeddings hazmat-sds hazmat-sds-embeddings hazmat-wsg hazmat-wsg-embeddings; do
+for folder in hazmat-pictogram hazmat-pictogram-embeddings hazmat-pictogram-descriptions hazmat-prod hazmat-prod-embeddings hazmat-sds hazmat-sds-chunks hazmat-sds-embeddings hazmat-wsg hazmat-wsg-embeddings; do
     echo "Uploading $folder..."
     gsutil -m cp -r ${DATA_FILES_DIR}/$folder gs://${BASE_BUCKET}/${folder} 
 done
